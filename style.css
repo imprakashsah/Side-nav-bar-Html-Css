@@ -1,0 +1,99 @@
+/*body {
+    font-family: 'Courier New', Courier, monospace;
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.sidebar{
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    top: 10px;
+    background-color: #042331;
+    transition: all .5s ease;
+
+}
+
+.sidebar header{
+    
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    background-color: rgb(46, 46, 51);
+    user-select: none;
+}
+.sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font size: 20px;
+    padding-left: 40px;
+    color: white;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-bottom: 1px solid black;
+    transition: .5s;
+}
+ul li:hover a{
+    padding-left: 50px;
+
+}
+.sidebar ul a i{
+    margin-right: 16px;
+    
+}
+#check{
+    display: none;
+
+}
+label #btn,label #cancel{
+    position: absolute;
+    cursor: pointer;
+    background: #042331;
+    boder-radius: 3px;
+
+}
+label #btn{
+    left: 40px;
+    top: 0px;
+    font-size: 35px;
+    color:white;
+    padding: 6px 12px;
+    transition: all .5s ease;
+}
+label #cancel{
+    z-index: 1111;
+    left: -195px;
+    top: 0px;
+    font-size: 15px;
+    color: #0a5275;
+    padding: 2px 6px;
+    transition: all .5s ease;
+}
+#check:checked ~ .sidebar{
+    left: 0;
+}
+#check:checked ~ label #btn{
+    left: 0px;
+    opacity: 0px;
+    pointer-events: none;
+    
+}
+#check:checked ~ label #cancel{
+    left: 225px;
+    
+}
+section{
+    background: url(cover.jpg);
+    background-position: top;
+    background-size: cover;
+    top: 0px;
+    height: 100vh;
+}
+   

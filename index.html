@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital-Background</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"></link>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>body {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+    }
+    .sidebar{
+        position: fixed;
+        left: -250px;
+        width: 250px;
+        height: 100%;
+        top: 0px;
+        background-color: #042331;
+        transition: all .5s ease;
+    
+    }
+    
+    .sidebar header{
+        
+        font-size: 22px;
+        color: white;
+        text-align: center;
+        line-height: 70px;
+        background-color: rgb(46, 46, 51);
+        user-select: none;
+    }
+    .sidebar ul a{
+        display: block;
+        height: 100%;
+        width: 100%;
+        line-height: 65px;
+        font size: 20px;
+        padding-left: 40px;
+        color: white;
+        box-sizing: border-box;
+        border-top: 0px solid rgba(255,255,255,.1);
+        border-bottom: 1px solid black;
+        transition: .5s;
+    }
+    ul li:hover a{
+        padding-left: 50px;
+    
+    }
+    .sidebar ul a i{
+        margin-right: 16px;
+        
+    }
+    #check{
+        display: none;
+    
+    }
+    label #btn,label #cancel{
+        position: absolute;
+        cursor: pointer;
+        background: #042331;
+        boder-radius: 3px;
+    
+    }
+    label #btn{
+        left: 40px;
+        top: 0px;
+        font-size: 35px;
+        color:white;
+        padding: 6px 12px;
+        transition: all .5s ease;
+    }
+    label #cancel{
+        z-index: 1111;
+        left: -195px;
+        top: 0px;
+        font-size: 15px;
+        color: #0a5275;
+        padding: 2px 6px;
+        transition: all .5s ease;
+    }
+    #check:checked ~ .sidebar{
+        left: 0;
+        
+    }
+    #check:checked ~ label #btn{
+        left: 0px;
+        opacity: 0px;
+        pointer-events: none;
+       
+        
+    }
+    #check:checked ~ label #cancel{
+        left: 225px;
+        
+        
+    }
+    section{
+        background: url(cover.jpg);
+        background-position: top;
+        background-size: cover;
+        height: 100vh;
+       
+    
+    }
+       </style>
+</head>
+<body>
+    
+    <input type="checkbox" id="check">
+    <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+        <header>Digital-Background</header>
+        <!--<marquee><img src="header.jpg" ></marquee>-->
+        <ul>
+            <li><a href><i class="fas fa-cog fa-qrcode"></i>Dashboard</a></li>
+            <li><a href><i class='far fa-star'></i>Events</a></li>
+            <li><a href><i class="fas fa-cog fa-envelope"></i>Contact Us</a></li>
+            <li><a href><i class="fas fa-cog fa-pulse"></i>Admin</a></li>
+            
+        </ul>
+        <hr>
+    
+    </div>
+<section>
+    <div>
+       <h1 class="top"></h1>
+       
+       
+    </div>    <!--contain Section-->
+<div class="container"> 
+    <h1 >Lorem ipsum dolor sit amet consectetur.</h1>
+</div>
+
+</section>
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
